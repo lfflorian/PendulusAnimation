@@ -2,7 +2,7 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
-    animation: 6s abackground 6s;
+    animation: 4s abackground 4s;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
 }
@@ -33,7 +33,7 @@ body {
                             100% 0,
                             100% 100%,
                             0 100%;
-    animation: bg 3s, 3s bc 3s;
+    animation: bg 2s, 2s bc 2s;
     animation-play-state: running;
     animation-iteration-count:1;
     animation-fill-mode: forwards;
