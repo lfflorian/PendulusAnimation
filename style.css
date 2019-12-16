@@ -2,6 +2,9 @@ body {
     background-color: black;
     margin: 0;
     padding: 0;
+    animation: 6s abackground 6s;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
 }
 
 .space   {
@@ -30,8 +33,10 @@ body {
                             100% 0,
                             100% 100%,
                             0 100%;
-    animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation: bg 3s, 3s bc 3s;
     animation-play-state: running;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes bg {
@@ -64,5 +69,25 @@ body {
                             3px 100%,
                             100% 3px,
                             3px 100%;
+    }
+}
+
+@keyframes bc {
+    0% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+@keyframes abackground {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: white;
     }
 }
