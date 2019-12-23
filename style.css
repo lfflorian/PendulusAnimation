@@ -1,42 +1,14 @@
-body {
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    animation: 4s abackground 4s;
-    animation-iteration-count:1;
-    animation-fill-mode: forwards;
+@font-face {
+    font-family:"Gothic";
+    src: url("CenturyGothicRegular.ttf") format("truetype");
+  }
+
+  body {
+    font-family: Gothic;
 }
 
 .space   {
     margin: 50px;
-}
-
-.rectangle {
-    width: 200px;
-    height: 400px;
-    background-color: transparent;
-
-    width: 25%;
-    margin: 2rem auto;
-    padding: 2em;
-    
-    background-repeat: no-repeat;
-    background-image:   linear-gradient(to right, #ffffff 100%, #ffffff 100%),
-                        linear-gradient(to bottom, #ffffff 100%, #ffffff 100%),
-                        linear-gradient(to right, #ffffff 100%, #ffffff 100%),
-                        linear-gradient(to bottom, #ffffff 100%, #ffffff 100%);
-    background-size:    100% 3px,
-                        3px 100%,
-                        100% 3px,
-                        3px 100%;
-    background-position:    0 0,
-                            100% 0,
-                            100% 100%,
-                            0 100%;
-    animation: bg 2s, 2s bc 2s;
-    animation-play-state: running;
-    animation-iteration-count:1;
-    animation-fill-mode: forwards;
 }
 
 .logo {
@@ -44,55 +16,6 @@ body {
     max-height: 100%;
 }
 
-@keyframes bg {
-    0% {
-        background-size:    0 3px,
-                            3px 0,
-                            0 3px,
-                            3px 0;
-    }
-    25% {
-        background-size:    100% 3px,
-                            3px 0,
-                            0 3px,
-                            3px 0;
-    }
-    50% {
-        background-size:    100% 3px,
-                            3px 100%,
-                            0 3px,
-                            3px 0;
-    }
-    75% {
-        background-size:    100% 3px,
-                            3px 100%,
-                            100% 3px,
-                            3px 0;
-    }
-    100% {
-        background-size:    100% 3px,
-                            3px 100%,
-                            100% 3px,
-                            3px 100%;
-    }
-}
-
-@keyframes bc {
-    0% {
-        background-color: transparent;
-    }
-
-    100% {
-        background-color: white;
-    }
-}
-
-@keyframes abackground {
-    0% {
-        background-color: black;
-    }
-
-    100% {
-        background-color: white;
-    }
+.title {
+    text-align: center;
 }
