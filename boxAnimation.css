@@ -79,6 +79,16 @@ body {
     }
 }
 
+@keyframes bc2 {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
 @keyframes abackground {
     0% {
         background-color: black;

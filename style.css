@@ -19,3 +19,54 @@
 .title {
     text-align: center;
 }
+
+/*Video */
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    visibility: hidden;
+    animation: video;
+    animation-duration: 3s;
+    animation-delay: 7s;
+    animation-play-state: running;
+    animation-iteration-count:1;
+    animation-fill-mode: forwards;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+@keyframes video {
+    0% {
+        visibility: hidden;
+    }
+
+    100% {
+        visibility: visible;
+    }
+}
